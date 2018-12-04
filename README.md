@@ -18,7 +18,7 @@ exporting the svg make sure that you select the option to use presentation attri
 
 ```js
 // gulpfile.js
-var sassInlineSvg = require('gulp-sass-inline-svg-m2');
+var sassInlineSvg = require('m2-sass-inlinesvg');
 var svgmin = require('gulp-svgmin');
 
 gulp.task('sass:svg', function(){

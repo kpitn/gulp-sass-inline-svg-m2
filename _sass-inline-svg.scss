@@ -1,7 +1,7 @@
 ////
-/// Functions and mixins for gulp-sass-inline-svg-m2 based on gulp-sassvg
+/// Functions and mixins for m2-sass-inlinesvg based on gulp-sassvg
 /// @author David Mosemann
-/// @group gulp-sass-inline-svg-2
+/// @group m2-sass-inlinesvg
 /// @see https://github.com/MattDiMu/gulp-sassvg
 ////
 
@@ -96,7 +96,7 @@ $SVG-URL: true !default;
 
 }
 
-/// returns all icons passed into gulp-sass-inline-svg-m2, optionally filtered by their folder
+/// returns all icons passed into m2-sass-inlinesvg, optionally filtered by their folder
 /// @param {folder} [$folder] - only return the icons in a particular folder
 /// @return {list} - a list of icon-names, which may be used by the inline-svg() function
 /// @example scss - in case you have 2 icons (facebook.svg and twitter.svg) in your folder "social"

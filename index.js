@@ -9,7 +9,7 @@ var fs = require('fs');
 var path = require('path');
 var cheerio = require('cheerio');
 
-const PLUGIN_NAME = 'gulp-sass-inline-svg-m2';
+const PLUGIN_NAME = 'm2-sass-inlinesvg';
 const URI_PREFIX = 'data:image/svg+xml, ';
 
 
