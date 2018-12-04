@@ -33,7 +33,7 @@ function m2SassInlinesvg(options) {
 	options.dataScss = path.join(options.destDir, "_" + options.prefix + "sass-inline-svg-data.scss");
 
 	var writeStreamRoot = fs.createWriteStream(options.rootScss);
-	writeStreamRoot.write(fs.readFileSync(__dirname + "/_sass-inline-svg.scss", "utf8"));
+    writeStreamRoot.write(fs.readFileSync(__dirname + "/_sass-inline-svg.scss", "utf8").replace("sass-inline-svg-data", options.prefix+ "sass-inline-svg-data"));
 	writeStreamRoot.end();
 
 	var writeStream = fs.createWriteStream(options.dataScss);
