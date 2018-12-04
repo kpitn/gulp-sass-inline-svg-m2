@@ -18,13 +18,13 @@ exporting the svg make sure that you select the option to use presentation attri
 
 ```js
 // gulpfile.js
-var sassInlineSvg = require('m2-sass-inlinesvg');
+var m2SassInlinesvg = require('m2-sass-inlinesvg');
 var svgmin = require('gulp-svgmin');
 
 gulp.task('sass:svg', function(){
     return gulp.src('./path/to/svgs/folder/**/*.svg') 
       .pipe(svgmin()) // Recommend using svg min to optimize svg files first
-      .pipe(sassInlineSvg({
+      .pipe(m2SassInlinesvg({
         destDir: './icons',
         prefix: 'mytheme'
       }));

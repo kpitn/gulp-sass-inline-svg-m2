@@ -13,13 +13,13 @@ const PLUGIN_NAME = 'm2-sass-inlinesvg';
 const URI_PREFIX = 'data:image/svg+xml, ';
 
 
-module.exports = gulpSassInlineSvg;
+module.exports = m2SassInlinesvg;
 
 /**
  * Convert svg file into a sass function and write to a scss file
  * @param {object} options plugin options 
  */
-function gulpSassInlineSvg(options) {
+function m2SassInlinesvg(options) {
 	options = options || {};
 	options.destDir = options.destDir || "./scss";
 	options.prefix = options.prefix + '_' || "";
