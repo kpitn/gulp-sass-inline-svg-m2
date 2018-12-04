@@ -1,4 +1,4 @@
-# gulp-sass-inling-svg-m2
+# m2-sass-inlinesvg
 Gulp plugin for converting svg files into sass functions in order inline svgs in
 your css files and use as background-image icons. Based on the gulp plugin
 Fork of [gulp-sassvg](https://github.com/MattDiMu/gulp-sassvg) and follows recommendations
@@ -7,7 +7,7 @@ for [optimizing inline svgs for full browser support](https://codepen.io/tigt/po
 ## Install
 
 ```bash
-npm install gulp-sass-inling-svg-m2 --save-dev
+npm install m2-sass-inlinesvg --save-dev
 ```
 
 ## Basic Usage
