@@ -72,7 +72,8 @@ $SVG-URL: true !default;
 	@if(type-of($icon) != "string"){
 		@warn "Could not find '#{$icon}', either the svg file does not exist or the name was mispelled.";
 	} @else if (function-exists($functionname) == false) {
-		@warn "Function '#{$icon}' does not exist.";
+		@return '';
+		//@warn "Function '#{$icon}' does not exist.";
 	} @else{
 		@if(type-of($color) == "color"){
 			$fillcolor: uri-encode-color($fillcolor);
